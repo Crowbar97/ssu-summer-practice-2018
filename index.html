@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <div id="root" class="flex-col-s">
+        <header>
+            <div class="state-line flex-row-b">
+                <div class="flex-row-s">
+                    <div class="button open flex-row-cc">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <div class="state-info flex-row-sc">development</div>
+                </div>
+                <div class="button close flex-row-cc">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="tabs-line flex-row-sc">
+                <ul class="tabs-list flex-row-s">
+                    <li class="tab flex-row-cc active">новая вкладка<i class="button close fas fa-times"></i></li>
+                    <li class="tab flex-row-cc">новая вкладка<i class="button close fas fa-times"></i></li>
+                    <li class="tab flex-row-cc">новая вкладка<i class="button close fas fa-times"></i></li>
+                </ul>
+                <i class="button add fas fa-plus"></i>
+            </div>
+        </header>
+        <div class="flex-fill flex-row-s">
+            <aside class="sidebar">
+                <div class="search-bar flex-row-b">
+                    <div class="button filter flex-row-cc">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <input type="text" placeholder="Поиск..." class="flex-fill">
+                    <div class="button undo flex-row-cc">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                </div>
+                <ul class="plot-list">
+                    <li>
+                        <span class="item-label">
+                            <i class="fas fa-caret-right"></i>
+                            TestWell
+                        </span>
+                        <ul>
+                            <li>
+                                <span class="item-label">
+                                    <i class="fas fa-caret-right"></i>
+                                    Демо3
+                                </span>
+                                <ul>
+                                    <li>
+                                        <span class="item-label">
+                                            <i class="fas fa-caret-right"></i>
+                                            Демо3
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <span class="item-label">
+                                                    По времени
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="item-label">
+                                                    По глубине
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="plot-list">
+                        <li>
+                            <span class="item-label">
+                                <i class="fas fa-caret-right"></i>
+                                Unknown
+                            </span>
+                            <ul>
+                                <li>
+                                    <span class="item-label">
+                                        <i class="fas fa-caret-right"></i>
+                                        demoWell
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <span class="item-label">
+                                                <i class="fas fa-caret-right"></i>
+                                                demoWellbore
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    <span class="item-label">
+                                                        Video: demoWellbore0
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-label">
+                                                        По времени
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-label">
+                                                        По глубине
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-label">
+                                                        Литология
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-label">
+                                                        Шламограмма
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-label">
+                                                        Инклинометрия
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                </ul>
+            </aside>
+            <main class="viewport flex-fill">
+                <span class="pointer">
+                    <i class="fas fa-angle-left"></i>
+                    &nbsp;
+                    Выберите скважину
+                </span>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

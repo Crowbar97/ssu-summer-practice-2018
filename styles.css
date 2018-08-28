@@ -1,0 +1,212 @@
+/* initial reset */
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-row-s {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.flex-row-b {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.flex-row-sc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-row-cc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col-s {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.flex-fill {
+    flex-grow: 1;
+}
+
+/* state line */
+
+.state-line {
+    height: 40px;
+    border: 1px solid #dedfdf;
+}
+
+.state-info {
+    background: #f57f81;
+    border-right: 1px solid #dedfdf;
+    padding: 0 10px;
+}
+
+/* tabs line */
+
+.tabs-line {
+    border: 1px solid #dedfdf;
+    border-top: 0;
+}
+
+.tabs-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 40px;
+}
+
+/* tabs */
+
+.tab {
+    width: 160px;
+    border-right: 1px solid #dedfdf;
+}
+
+.active {
+    background: #f2f2f2;
+}
+
+/* buttons */
+
+.button:hover {
+    cursor: pointer;
+}
+
+.open {
+    width: 50px;
+    border-right: 1px solid #dedfdf;
+    color: #242424;
+}
+
+.open:hover {
+    background: #f7f7f7;
+}
+
+.state-line .close {
+    width: 50px;
+    border-left: 1px solid #dedfdf;
+    color: #373737;
+}
+
+.tabs-line .button {
+    margin-left: 1em;
+    transition: transform .25s;
+}
+
+.tabs-line .button:hover {
+    transform: scale(1.25);
+}
+
+.tab .close {
+    color: #e4545a;
+}
+
+.tabs-line .add {
+    color: #33c872;
+}
+
+
+
+/* main container */
+
+.sidebar {
+    width: 250px;
+}
+
+/* search-bar */
+
+.search-bar {
+    height: 34px;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 8px;
+    border: 0;
+    border-bottom: 1px solid #dedfdf;
+    outline: none;
+}
+
+.search-bar .button {
+    width: 34px;
+}
+
+.filter {
+    background: #f77133;
+    color: #fef1eb;
+}
+
+.filter:hover {
+    background: #f76328;
+}
+
+.undo {
+    background: #dfe0e1;
+    color: #676768;
+}
+
+.undo:hover {
+    background: #c9cacc;
+    color: #383939;
+}
+
+.viewport {
+    background: #efeff0;
+    position: relative;
+}
+
+/* drop-down list */
+
+.plot-list, .plot-list ul {
+    list-style: none;
+}
+
+.plot-list li {
+    margin-left: -15px;
+}
+
+.item-label i {
+    transition: transform .25s;
+}
+
+.item-label:hover i {
+    transform: rotate(90deg);
+}
+
+.item-label:hover ~ ul {
+    display: block;
+}
+
+.plot-list ul {
+    display: none;
+}
+
+.plot-list ul:hover {
+    display: block;
+}
+
+/* pointer */
+.pointer {
+    font-size: 2em;
+    color: #1f1f1f;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
