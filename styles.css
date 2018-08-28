@@ -1,3 +1,5 @@
+/* initial setup */
+
 html {
     font-family: Lato, "Helvetica Neue", Arial,Helvetica,sans-serif;
     font-size: .8em;
@@ -11,6 +13,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* flex models */
 
 .flex-row-s {
     display: flex;
@@ -48,6 +52,12 @@ body {
     flex-grow: 1;
 }
 
+/* buttons */
+
+.button:hover {
+    cursor: pointer;
+}
+
 /* state line */
 
 .state-line {
@@ -59,37 +69,6 @@ body {
     background: #f57f81;
     border-right: 1px solid #dedfdf;
     padding: 0 10px;
-}
-
-/* tabs line */
-
-.tabs-line {
-    border: 1px solid #dedfdf;
-    border-top: 0;
-}
-
-.tabs-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    height: 40px;
-}
-
-/* tabs */
-
-.tab {
-    width: 160px;
-    border-right: 1px solid #dedfdf;
-}
-
-.active {
-    background: #f2f2f2;
-}
-
-/* buttons */
-
-.button:hover {
-    cursor: pointer;
 }
 
 .open {
@@ -106,6 +85,29 @@ body {
     width: 50px;
     border-left: 1px solid #dedfdf;
     color: #373737;
+}
+
+/* tabs line */
+
+.tabs-line {
+    border: 1px solid #dedfdf;
+    border-top: 0;
+}
+
+.tabs-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 40px;
+}
+
+.tab {
+    width: 160px;
+    border-right: 1px solid #dedfdf;
+}
+
+.active {
+    background: #f2f2f2;
 }
 
 .tabs-line .button {
@@ -125,9 +127,7 @@ body {
     color: #33c872;
 }
 
-
-
-/* main container */
+/* sidebar */
 
 .sidebar {
     width: 250px;
@@ -170,12 +170,7 @@ input {
     color: #383939;
 }
 
-.viewport {
-    background: #efeff0;
-    position: relative;
-}
-
-/* drop-down list */
+/* plot-list */
 
 .plot-list, .plot-list ul {
     list-style: none;
@@ -185,27 +180,33 @@ input {
     margin-left: -15px;
 }
 
-.item-label i {
-    transition: transform .25s;
-}
-
 .item-label:hover i {
     transform: rotate(90deg);
 }
 
-.item-label:hover ~ ul {
-    display: block;
+.item-label i {
+    transition: transform .25s;
 }
 
 .plot-list ul {
     display: none;
 }
 
+.item-label:hover ~ ul {
+    display: block;
+}
+
 .plot-list ul:hover {
     display: block;
 }
 
-/* pointer */
+/* viewport */
+
+.viewport {
+    background: #efeff0;
+    position: relative;
+}
+
 .pointer {
     font-size: 2rem;
     color: #1f1f1f;
