@@ -1,4 +1,7 @@
-/* initial reset */
+html {
+    font-family: Lato, "Helvetica Neue", Arial,Helvetica,sans-serif;
+    font-size: .8em;
+}
 
 html, body, #root {
     height: 100%;
@@ -204,9 +207,10 @@ input {
 
 /* pointer */
 .pointer {
-    font-size: 2em;
+    font-size: 2rem;
     color: #1f1f1f;
     position: absolute;
     top: 100px;
     left: 20px;
+    font-weight: bold;
 }
