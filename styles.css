@@ -2,7 +2,7 @@
 
 html {
     font-family: Lato, "Helvetica Neue", Arial,Helvetica,sans-serif;
-    font-size: .8em;
+    font-size: 14px;
 }
 
 html, body, #root {
@@ -173,11 +173,13 @@ input {
 /* plot-list */
 
 .plot-list, .plot-list ul {
+    margin-bottom: 0;
     list-style: none;
 }
 
 .plot-list li {
-    margin-left: -15px;
+    margin-top: 1em;
+    margin-left: -.8em;
 }
 
 .item-label:hover i {
@@ -189,7 +191,7 @@ input {
 }
 
 .plot-list ul {
-    display: none;
+    /* display: none; */
 }
 
 .item-label:hover ~ ul {
@@ -214,4 +216,8 @@ input {
     top: 100px;
     left: 20px;
     font-weight: bold;
+}
+
+.with-indent {
+    margin-left: .5em;
 }
