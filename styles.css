@@ -89,10 +89,21 @@ body {
 
 /* tabs line */
 
-.tabs-line {
+.shadowed {
+    box-shadow: 0 2px 2px #222426;
+}
+
+.tabs-line-wrapper {
+    overflow: hidden;
+    transform: rotateX(180deg);
     border: 1px solid #dedfdf;
-    border-top: 0;
-    box-shadow: 0 1px 1px #222426;
+    border-bottom: 0;
+}
+
+.tabs-line {
+    overflow-x: scroll;
+    transform: rotateX(180deg);
+    margin-top: -15px;
 }
 
 .tabs-list {
@@ -113,6 +124,7 @@ body {
 
 .tabs-line .button {
     margin-left: 1em;
+    /* margin-right: 1em; */
     transition: transform .25s;
 }
 
