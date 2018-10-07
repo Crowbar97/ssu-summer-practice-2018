@@ -7,7 +7,7 @@ export default styled.div`
     border-right: 1px solid #dedfdf;
     color: #242424;
     :hover {
-        background: #f7f7f7;
         cursor: pointer;
+        background: #f7f7f7;
     }
 `;

@@ -3,11 +3,11 @@ import RowCC from 'global-styles/FlexBoxModels/RowCC';
 
 export default styled.div`
       ${RowCC}
-      color: #e4545a;
       :hover {
             cursor: pointer;
-            transform: scale(1.25);
+            background: #f7f7f7;
       }
-      margin-left: 1em;
-      transition: transform .25s;
+      width: 50px;
+      border-left: 1px solid #dedfdf;
+      color: #373737;
 `;

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Filter, Undo, CaretRight as Caret } from 'styled-icons/fa-solid';
-import MainWrapper from './components/MainWrapper';
-import SearchBar from './components/SearchBar';
-import ButtonFilter from './components/ButtonFilter';
-import SearchField from './components/SearchField';
-import ButtonUndo from './components/ButtonUndo';
-import PlotList from './components/PlotList';
-import Item from './components/Item';
-import List from './components/List';
-import Label from './components/Label';
+import MainWrapper from './styles/MainWrapper';
+import SearchBar from './styles/SearchBar';
+import ButtonFilter from './styles/ButtonFilter';
+import SearchField from './styles/SearchField';
+import ButtonUndo from './styles/ButtonUndo';
+import PlotList from './styles/PlotList';
+import Item from './styles/Item';
+import List from './styles/List';
+import Label from './styles/Label';
 
 
 class Sidebar extends Component {

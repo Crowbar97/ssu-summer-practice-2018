@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'bundle.js'
+        filename: 'index_bundle.js'
     },
     module: {
         rules: [
@@ -24,17 +24,16 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'css-loader',
                 query: {
-                  modules: true,
-                  localIdentName: '[name]__[local]___[hash:base64:5]'
+                    modules: true,
+                    localIdentName: '[name]__[local]___[hash:base64:5]'
                 }
             }
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin(
-            {
-                template: './src/index.html'
-            }
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }
         )
     ]
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { AngleLeft } from 'styled-icons/fa-solid';
-import MainWrapper from './components/MainWrapper';
-import Pointer from './components/Pointer';
-import Indent from './components/Indent';
+import MainWrapper from './styles/MainWrapper';
+import Pointer from './styles/Pointer';
+import Indent from './styles/Indent';
 
 class Viewport extends Component {
     render() {

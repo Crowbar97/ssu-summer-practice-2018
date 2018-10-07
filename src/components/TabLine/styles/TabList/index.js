@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import RowS from 'global-styles/FlexBoxModels/RowS';
 
-export default styled.div`
+export default styled.ul`
       ${RowS}
       padding: 0;
       margin: 0;
