@@ -15,7 +15,7 @@ class TabLine extends Component {
 
         this.addNewTab = this.addNewTab.bind(this);
 
-        // this.addNewTab();
+        this.addNewTab();
     }
 
     addNewTab() {

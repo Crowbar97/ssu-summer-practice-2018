@@ -7,6 +7,7 @@ class TabStore {
     @observable keyCounter = 0;
     @observable activeId = 0;
 
+    // tab addition
     addNewTab() {
         this.tabList.push(
             <Tab
@@ -18,14 +19,35 @@ class TabStore {
         this.keyCounter++;
     }
 
+    // tab management
+    tabExist(tabId) {
+        return this.tabList.find(tab => tab.props.id === tabId) != undefined;
+    }
+
     activateTab(tabId) {
         this.activeId = tabId;
         console.log("tab with id " + tabId + " was activated!");
+    }   
+
+    activateNextTab() {
+        var tabInd = this.tabList.findIndex(tab => tab.props.id == this.activeId);
+        if (tabInd > 0)
+            this.activateTab(this.tabList[tabInd - 1].props.id);
+        else if (tabInd < this.tabList.length - 1)
+            this.activateTab(this.tabList[tabInd + 1].props.id);
+        else
+            this.activateTab(this.keyCounter);            
     }
 
-    closeTab(tabId) {
+    closeTab(tabId, event) {
+        if (tabId === this.activeId)
+            this.activateNextTab();
+        
         this.tabList = this.tabList.filter(tab => tab.props.id !== tabId);
+
         console.log("tab with id " + tabId + " was closed!");
+
+        event.stopPropagation();
     }
 }
 

@@ -5,9 +5,8 @@ import SearchBar from './styles/SearchBar';
 import ButtonFilter from './styles/ButtonFilter';
 import SearchField from './styles/SearchField';
 import ButtonUndo from './styles/ButtonUndo';
-import PlotList from './styles/PlotList';
-import Item from './styles/Item';
 import List from './styles/List';
+import Item from './styles/Item';
 import Label from './styles/Label';
 
 
@@ -24,7 +23,7 @@ class Sidebar extends Component {
                         <Undo size="18" />
                     </ButtonUndo>
                 </SearchBar>
-                <PlotList>
+                <List>
                     <Item>
                         <Label>
                             <Caret size="18" />
@@ -59,8 +58,8 @@ class Sidebar extends Component {
                             </Item>
                         </List>
                     </Item>
-                </PlotList>
-                <PlotList>
+                </List>
+                <List>
                     <Item>
                         <Label>
                             <Caret size="18" />
@@ -115,7 +114,7 @@ class Sidebar extends Component {
                             </Item>
                         </List>
                     </Item>
-                </PlotList>
+                </List>
             </MainWrapper>
         )
     }

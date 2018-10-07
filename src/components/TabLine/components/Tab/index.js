@@ -25,15 +25,15 @@ class Tab extends Component {
         tabStore.activateTab(this.state.id);
     }
 
-    close() {
-        tabStore.closeTab(this.state.id);
+    close(event) {
+        tabStore.closeTab(this.state.id, event);
     }
 
     render() {
         return (
-            <Wrapper isActive={tabStore.activeId === this.state.id} onClick={this.activate}>
+            <Wrapper onClick={this.activate} isActive={tabStore.activeId === this.state.id}>
                 {this.state.title}
-                <ButtonClose onClick={this.close}>
+                <ButtonClose onClick={this.close} isHidden={tabStore.tabList.length < 2}>
                     <Cross size="18" />
                 </ButtonClose>
             </Wrapper>
