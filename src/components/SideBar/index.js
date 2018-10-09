@@ -11,34 +11,43 @@ import Label from './styles/Label';
 
 
 class Sidebar extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            filterSize: 12,
+            caretSize: 14
+        };
+    }
+
     render() {
         return (
             <MainWrapper>
                 <SearchBar>
                     <ButtonFilter>
-                        <Filter size="18" />
+                        <Filter size={this.state.filterSize} />
                     </ButtonFilter>
                     <SearchField type="text" placeholder="Поиск..." />
                     <ButtonUndo>
-                        <Undo size="18" />
+                        <Undo size={this.state.filterSize} />
                     </ButtonUndo>
                 </SearchBar>
                 <List>
                     <Item>
                         <Label>
-                            <Caret size="18" />
+                            <Caret size={this.state.caretSize} />
                             TestWell
                         </Label>
                         <List>
                             <Item>
                                 <Label>
-                                    <Caret size="18" />
+                                    <Caret size={this.state.caretSize} />
                                     Демо3
                                 </Label>
                                 <List>
                                     <Item>
                                         <Label>
-                                            <Caret size="18" />
+                                            <Caret size={this.state.caretSize} />
                                             Демо3
                                         </Label>
                                         <List>
@@ -62,19 +71,19 @@ class Sidebar extends Component {
                 <List>
                     <Item>
                         <Label>
-                            <Caret size="18" />
+                            <Caret size={this.state.caretSize} />
                             Unknown
                         </Label>
                         <List>
                             <Item>
                                 <Label>
-                                     <Caret size="18" />
+                                     <Caret size={this.state.caretSize} />
                                     demoWell
                                 </Label>
                                 <List>
                                     <Item>
                                         <Label>
-                                            <Caret size="18" />
+                                            <Caret size={this.state.caretSize} />
                                             demoWellbore
                                         </Label>
                                         <List>

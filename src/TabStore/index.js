@@ -7,7 +7,7 @@ class TabStore {
     @observable keyCounter = 0;
     @observable activeId = 0;
 
-    // tab addition
+    // tab additions
     addNewTab() {
         this.tabList.push(
             <Tab

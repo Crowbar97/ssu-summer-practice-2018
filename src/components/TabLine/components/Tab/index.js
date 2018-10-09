@@ -15,7 +15,8 @@ class Tab extends Component {
 
         this.state = {
             id: props.id,
-            title: props.title || "новая вкладка"
+            title: props.title || "новая вкладка",
+            crossSize: 15
         };
 
         console.log("tab with id " + this.state.id + " was created!");
@@ -34,7 +35,7 @@ class Tab extends Component {
             <Wrapper onClick={this.activate} isActive={tabStore.activeId === this.state.id}>
                 {this.state.title}
                 <ButtonClose onClick={this.close} isHidden={tabStore.tabList.length < 2}>
-                    <Cross size="18" />
+                    <Cross size={this.state.crossSize} />
                 </ButtonClose>
             </Wrapper>
         )

@@ -15,6 +15,10 @@ class TabLine extends Component {
 
         this.addNewTab = this.addNewTab.bind(this);
 
+        this.state = {
+            plusSize: 15
+        };
+
         this.addNewTab();
     }
 
@@ -31,7 +35,7 @@ class TabLine extends Component {
                             {tabStore.tabList}
                         </TabList>
                         <ButtonAdd onClick={this.addNewTab}>
-                            <Plus size="18"/>
+                            <Plus size={this.state.plusSize}/>
                         </ButtonAdd>
                     </Wrapper>
                 </MainWrapper>

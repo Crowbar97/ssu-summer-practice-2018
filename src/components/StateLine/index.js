@@ -7,19 +7,28 @@ import StateInfo from './styles/StateInfo';
 import ButtonClose from './styles/ButtonClose';
 
 class StateLine extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            folderSize: 16,
+            crossSize: 15
+        };
+    }
+
     render() {
         return (
             <MainWrapper>
                 <RowSWrapper>
                     <ButtonOpen>
-                        <Folder size="18"/>
+                        <Folder size={this.state.folderSize}/>
                     </ButtonOpen>
                     <StateInfo>
                         development
                     </StateInfo>
                 </RowSWrapper>
                 <ButtonClose>
-                    <Cross size="18"/>
+                    <Cross size={this.state.crossSize}/>
                 </ButtonClose>
             </MainWrapper>
         )
