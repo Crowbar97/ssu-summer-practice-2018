@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { AngleLeft } from 'styled-icons/fa-solid';
 import MainWrapper from './styles/MainWrapper';
 import Pointer from './styles/Pointer';
-import Indent from './styles/Indent';
+import Tip from './styles/Tip';
 
 class Viewport extends Component {
     render() {
@@ -10,9 +10,9 @@ class Viewport extends Component {
             <MainWrapper>
                 <Pointer>
                     <AngleLeft size="24" />
-                    <Indent>
+                    <Tip>
                         Выберите скважину
-                    </Indent>
+                    </Tip>
                 </Pointer>
             </MainWrapper>
         )
