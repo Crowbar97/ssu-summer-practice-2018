@@ -20,10 +20,6 @@ class TabStore {
     }
 
     // tab management
-    tabExist(tabId) {
-        return this.tabList.find(tab => tab.props.id === tabId) != undefined;
-    }
-
     activateTab(tabId) {
         this.activeId = tabId;
         console.log("tab with id " + tabId + " was activated!");
