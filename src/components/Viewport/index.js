@@ -5,11 +5,19 @@ import Pointer from './styles/Pointer';
 import Tip from './styles/Tip';
 
 class Viewport extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            angleSize: 24
+        };
+    }
+
     render() {
         return (
             <MainWrapper>
                 <Pointer>
-                    <AngleLeft size="24" />
+                    <AngleLeft size={this.state.angleSize} />
                     <Tip>
                         Выберите скважину
                     </Tip>
