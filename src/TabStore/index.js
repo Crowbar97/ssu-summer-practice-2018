@@ -1,6 +1,6 @@
 import React from 'react';
 import { observable } from 'mobx';
-import Tab from '../components/TabLine/components/Tab';
+import Tab from '../components/Tab';
 
 class TabStore {
     @observable tabList = [];

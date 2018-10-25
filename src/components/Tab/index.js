@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import tabStore from '../../../../TabStore';
+import tabStore from '../../TabStore';
 import { Times as Cross} from 'styled-icons/fa-solid';
 import Wrapper from './styles/Wrapper';
 import ButtonClose from './styles/ButtonClose';

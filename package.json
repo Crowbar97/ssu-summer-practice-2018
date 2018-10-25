@@ -1,13 +1,13 @@
 {
-  "name": "react_template",
+  "name": "ml_server",
   "version": "1.0.0",
-  "description": "my react template",
+  "description": "ML Server layout",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack -- mode production"
   },
-  "author": "max",
+  "author": "Stokolesov Maxim",
   "license": "ISC",
   "dependencies": {
     "mobx": "^5.0.3",
