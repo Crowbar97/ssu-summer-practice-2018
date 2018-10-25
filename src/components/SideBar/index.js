@@ -4,7 +4,7 @@ import MainWrapper from './styles/MainWrapper';
 import SearchBar from './styles/SearchBar';
 import ButtonFilter from './styles/ButtonFilter';
 import SearchField from './styles/SearchField';
-import ButtonUndo from './styles/ButtonUndo';
+import ButtonRefresh from './styles/ButtonRefresh';
 import List from './styles/List';
 import Item from './styles/Item';
 import Label from './styles/Label';
@@ -28,9 +28,9 @@ class Sidebar extends Component {
                         <Filter size={this.state.filterSize} />
                     </ButtonFilter>
                     <SearchField type="text" placeholder="Поиск..." />
-                    <ButtonUndo>
+                    <ButtonRefresh>
                         <Undo size={this.state.filterSize} />
-                    </ButtonUndo>
+                    </ButtonRefresh>
                 </SearchBar>
                 <List>
                     <Item>
